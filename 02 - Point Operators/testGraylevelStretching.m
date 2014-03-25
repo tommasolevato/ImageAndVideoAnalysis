@@ -1,0 +1,10 @@
+img = rgb2gray(imread('test-hist-01.png'));
+imshow(img); figure; imhist(img);
+imgS = imadjust(img, double([min(img(:)) max(img(:))]/255.0));
+figure;
+imshow(imgS);
+imgSS = imadjust(img,stretchlim(img, [0.02 0.98]));
+figure();
+imshow(imgSS);
+figure();
+imhist(imgSS);
