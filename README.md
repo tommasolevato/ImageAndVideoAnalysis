@@ -1,4 +1,6 @@
 ImageAndVideoAnalysis
 =====================
 
-A backup of my Matlab code for an exam of Image and Video Analysis.
+Start Matlab and enjoy!
+
+Note: there are references to images not hosted on this repository (for copyright reasons); be careful to modify those references with images of your choice.
