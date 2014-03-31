@@ -74,15 +74,15 @@ end
 [best_t best_val] = fminsearch(@(t) hausdorff_t(t, img01_I, img01_J, img02_I, img02_J), [0 0])
 
 
-% load -ascii groundtruth;
-% [minValue minIndex] = min(hieroDist');
-% results = zeros(19,22);
-% for k=1:19
-%     results(k,minIndex(k)) = 1;
-% end
-% 
-% matched = results & groundtruth;
-% sum(matched(:))
+load -ascii groundtruth;
+[minValue minIndex] = min(hieroDist');
+results = zeros(19,22);
+for k=1:19
+    results(k,minIndex(k)) = 1;
+end
+
+matched = results & groundtruth;
+sum(matched(:))
 
 for k=1:size(bestIndex,2)
     figure;
